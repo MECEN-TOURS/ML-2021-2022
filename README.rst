@@ -1,7 +1,7 @@
 Cours de Machine Learning
 =========================
 
-Cours du Master `MECEN <http://mecen-univ-tours.fr/>`_
+Cours du Master `MECEN <http://mecen-univ-tours.fr/>`_ pour les élèves de deuxième année, session 2020-2021.
 
 Programme
 ---------
@@ -9,7 +9,7 @@ Programme
 #) Introduction à la méthodologie générale.
 #) Techniques pour récupération des données.
 #) Techniques de nettoyage des données.
-#) Exploration de différents types de modèles de la librairie `scikit-learn <https://scikit-learn.org/>`_
+#) Exploration de différents types de modèles de la librairie `scikit-learn <https://scikit-learn.org/>`_.
 
 Ressources
 ----------
