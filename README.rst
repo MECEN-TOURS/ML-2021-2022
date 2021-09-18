@@ -29,8 +29,12 @@ Bibliographiques
 En accès libre
 """"""""""""""
 
-- Le livre `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook>`_ de Jake Vanderplas.
+- Le livre `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook>`_ de `Jake Vanderplas <http://vanderplas.com/>`_.
 
+Livres
+""""""
+
+- Pour une introduction en douceur et *à la main* au machine learning: `Data Science from Scratch <https://www.oreilly.com/library/view/data-science-from/9781492041122/>`_ de `Joel Grus <https://joelgrus.com/>`_.
 
 
 
