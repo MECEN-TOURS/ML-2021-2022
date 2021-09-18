@@ -26,6 +26,10 @@ Logicielles
 Bibliographiques
 ^^^^^^^^^^^^^^^^
 
+En accès libre
+""""""""""""""
+
+- Le livre `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook>`_ de Jake Vanderplas.
 
 
 
