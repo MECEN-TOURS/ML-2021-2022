@@ -3,6 +3,8 @@ Cours de Machine Learning
 
 Cours du Master `MECEN <http://mecen-univ-tours.fr/>`_ pour les élèves de deuxième année, session 2020-2021.
 
+Validation sur projet mettant en place tous les aspects de l'acquisition des données au déploiement d'une appliction élémentaire utilisant un prédicteur.
+
 Programme
 ---------
 
