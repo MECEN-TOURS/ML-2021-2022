@@ -2,12 +2,15 @@
 # -*- coding: utf-8 -*-
 """Description.
 
-Démonstration de pyserde et typer.
+Démonstration de
+    - pyserde pour la sérialisation,
+    - typer pour la génération d'un CLI.
 """
 from enum import Enum
 from dataclasses import dataclass
 from serde import serialize, deserialize
 from serde.yaml import from_yaml, to_yaml
+from rich import print
 import typer
 
 
@@ -126,9 +129,12 @@ def solver(fichier_donnees: str):
         data = fichier.read()
 
     donnees = from_yaml(Donnees, data)
-    print(f"DEPART: {donnees.depart}")
-    print(f"ARRIVEE: {donnees.arrivee}")
-    print(f"GRAPHE: {donnees.graphe}")
+    print(f"DEPART:")
+    print(donnees.depart)
+    print(f"ARRIVEE:")
+    print(donnees.arrivee)
+    print(f"GRAPHE:")
+    print(donnees.graphe)
     if a_solution(donnees.depart, donnees.arrivee, donnees.graphe):
         message = "Il existe un chemin!"
     else:
