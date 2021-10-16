@@ -78,6 +78,7 @@ app = typer.Typer()
 
 @app.command()
 def test():
+    """Effectue les tests interne du solver."""
     depart = Etat(
         berger=Cote.GAUCHE,
         loup=Cote.GAUCHE,
@@ -98,7 +99,8 @@ def test():
 
 
 @app.command()
-def exemple(nom_fichier: str):
+def exemple(nom_fichier: str = "config.yaml"):
+    """Génère un fichier de DONNEES minimal."""
     depart = Etat(
         berger=Cote.GAUCHE,
         loup=Cote.GAUCHE,
@@ -118,8 +120,9 @@ def exemple(nom_fichier: str):
 
 
 @app.command()
-def solver(nom_fichier: str):
-    with open(nom_fichier, "r") as fichier:
+def solver(fichier_donnees: str):
+    """Décide si il existe un chemin reliant DEPART et ARRIVEE dans le GRAPHE."""
+    with open(fichier_donnees, "r") as fichier:
         data = fichier.read()
 
     donnees = from_yaml(Donnees, data)
@@ -127,9 +130,13 @@ def solver(nom_fichier: str):
     print(f"ARRIVEE: {donnees.arrivee}")
     print(f"GRAPHE: {donnees.graphe}")
     if a_solution(donnees.depart, donnees.arrivee, donnees.graphe):
-        print("Il existe un chemin.")
+        message = "Il existe un chemin!"
     else:
-        print("Pas de chemin.")
+        message = "Il n'y a pas de chemin!"
+    total = typer.style(
+        message, bg=typer.colors.BRIGHT_BLACK, fg=typer.colors.BRIGHT_RED, bold=True
+    )
+    typer.echo(total)
 
 
 if __name__ == "__main__":
