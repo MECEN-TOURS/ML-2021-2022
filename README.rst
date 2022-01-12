@@ -33,6 +33,7 @@ En accès libre
 
 - Le livre `Python Data Science Handbook <https://github.com/jakevdp/PythonDataScienceHandbook>`_ de `Jake Vanderplas <http://vanderplas.com/>`_.
 - L'`article <https://github.com/JonasCz/How-To-Prevent-Scraping>`_ sur les techniques permettant de gêner le scraping.
+- Une prospective sur le futur du `webscraping <https://scrapeops.io/blog/the-state-of-web-scraping-2022/>`_
 
 Livres
 """"""
